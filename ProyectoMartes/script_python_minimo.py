@@ -1,8 +1,8 @@
 import pyodbc
 
 server = "DESKTOP-P6M1FBC"
-user = "python_conect"
-password = "Python_conect1"
+user = "python_reader"
+password = "Pyth0n_R3ad3r!!!"
 data_base = "AdventureWorks2022"
 conexion_str = "DRIVER={SQL Server};" + f'SERVER={server};DATABASE={data_base};UID={user};PWD={password}'
 conn = pyodbc.connect(conexion_str)
