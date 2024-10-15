@@ -12,7 +12,7 @@ for row in cursor:
     values = [
         row[0],                   # Asumimos que la primera columna es un integer
         row[1],                   # Asumimos que la segunda columna es un string
-        float(row[2])
+        "{:,.2f}".format(float(row[2])).replace(',', 'X').replace('.', ',').replace('X', '.') + " $"
     ]
     print(values)
 conn.close()
